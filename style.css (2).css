@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feelings - Riviere Sucre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">Riviere Sucre</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cakes.html">Feelings</a></li>
+      <li><a href="subscription.html">Subscription</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="emotion-select">
+  <h2>How are you feeling today?</h2>
+  <div class="emotion-buttons">
+    <button onclick="showCake('comfort')">🤍 Comfort</button>
+    <button onclick="showCake('happy')">😄 Happy</button>
+    <button onclick="showCake('treat')">✨ Treat Myself</button>
+    <button onclick="showCake('fun')">🎉 Fun & Different</button>
+  </div>
+</section>
+
+<section class="cake-display">
+
+  <div id="comfort" class="cake hidden">
+    <h3>Chocolate Moist Cake</h3>
+    <p>Soft, rich, deeply comforting. For moments when you need warmth and reassurance.</p>
+    <span>RM 25</span>
+    <div class="contact-buttons">
+      <a href="https://wa.me/6016-783 1450" class="btn contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/riviere_sucre?igsh=MWt0NmhyejdrdXduMw==" target="_blank" class="btn contact-btn insta-btn"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <div id="happy" class="cake hidden">
+    <h3>Oreo Cheesecake</h3>
+    <p>Playful, creamy, joyful. A cake that celebrates smiles.</p>
+    <span>RM 35</span>
+    <div class="contact-buttons">
+      <a href="https://wa.me/6016-783 1450" class="btn contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/riviere_sucre?igsh=MWt0NmhyejdrdXduMw==" target="_blank" class="btn contact-btn insta-btn"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <div id="treat" class="cake hidden">
+    <h3>Biscoff Cheesecake</h3>
+    <p>Indulgent and luxurious. Because you deserve something special.</p>
+    <span>RM 40</span>
+    <div class="contact-buttons">
+      <a href="https://wa.me/6016-783 1450" class="btn contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/riviere_sucre?igsh=MWt0NmhyejdrdXduMw==" target="_blank" class="btn contact-btn insta-btn"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <div id="fun" class="cake hidden">
+    <h3>Brookies</h3>
+    <p>A playful mix of brownie and cookie. Fun, unexpected, and memorable.</p>
+    <span>RM 30</span>
+    <div class="contact-buttons">
+      <a href="https://wa.me/6016-783 1450" class="btn contact-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/riviere_sucre?igsh=MWt0NmhyejdrdXduMw==" target="_blank" class="btn contact-btn insta-btn"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

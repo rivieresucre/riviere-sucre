@@ -1,0 +1,21 @@
+/* Guided cake reveal */
+function showCake(type) {
+  document.querySelectorAll('.cake').forEach(cake => {
+    cake.classList.add('hidden');
+  });
+  const selected = document.getElementById(type);
+  selected.classList.remove('hidden');
+  selected.classList.add('fade');
+}
+
+/* Scroll reveal promo */
+const promo = document.getElementById('promo');
+window.addEventListener('scroll', () => {
+  const promoPosition = promo.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.2;
+
+  if (promoPosition < screenPosition) {
+    promo.classList.remove('hidden');
+    promo.classList.add('fade');
+  }
+});
